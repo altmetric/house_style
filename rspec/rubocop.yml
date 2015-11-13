@@ -1,0 +1,18 @@
+inherit_from: ../ruby/rubocop.yml
+
+Metrics/LineLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Style/BlockDelimiters:
+  Exclude:
+    - spec/factories/**/*.rb
+Style/Documentation:
+  Enabled: false
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Style/SymbolProc:
+  Exclude:
+    - spec/factories/**/*.rb
+Style/WordArray:
+  Enabled: false
