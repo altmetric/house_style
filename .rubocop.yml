@@ -1,0 +1,6 @@
+# This is the rubocop configuration file for this gem.
+# You probably shouldn't inherit from this in your own projects
+Metrics/LineLength:
+  Max: 120
+Style/Documentation:
+  Enabled: false
