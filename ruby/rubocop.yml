@@ -1,0 +1,4 @@
+inherit_from:
+  - ./configuration.yml
+  - ./metrics.yml
+  - ./style.yml

@@ -1,0 +1,58 @@
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  FunctionalMethods:
+    - before
+    - given
+    - given!
+    - watch
+    - times
+    - try
+    # logger methods that can take blocks
+    - debug
+    - error
+    - info
+    - warning
+    # Rubocop defaults which may otherwise be overwritten
+    - let
+    - let!
+    - subject
+    - watch
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+  Details: >-
+    When the last (or only) argument to a method is a Hash,
+    omit the { } braces. The exception is if the preceding
+    argument is also a Hash.
+Style/CollectionMethods:
+  Enabled: true
+Style/CommandLiteral:
+  EnforcedStyle: mixed
+Style/Copyright:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+Style/Encoding:
+  EnforcedStyle: when_needed
+Style/GuardClause:
+  MinBodyLength: 3
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
+Style/IfUnlessModifier:
+  MaxLineLength: 100
+Style/IndentHash:
+  EnforcedStyle: consistent
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+Style/MultilineOperationIndentation:
+  Enabled: false
+Style/NonNilCheck:
+  IncludeSemanticChanges: true
+Style/NumericLiterals:
+  MinDigits: 6
+Style/StringLiterals:
+  Enabled: false
+Style/StringMethods:
+  Enabled: true
