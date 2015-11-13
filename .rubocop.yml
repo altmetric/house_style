@@ -1,6 +1,5 @@
 # This is the rubocop configuration file for this gem.
-# You probably shouldn't inherit from this in your own projects
-Metrics/LineLength:
-  Max: 120
-Style/Documentation:
-  Enabled: false
+# You probably shouldn't inherit from this in your own projects.
+# See the [README](README.md) for instructions on using `house_style`
+# style settings from within your own projects
+inherit_from: ruby/rubocop.yml
