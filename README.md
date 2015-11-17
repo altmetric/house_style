@@ -32,6 +32,13 @@ inherit_gem:
   house_style: rails/rubocop.yml
 ```
 
+`house_style` comes with a Rails generator which can set up both your project root and your RSpec folder to start using the default house styles by default. With `house_style` declared in your Gemfile:
+
+```bash
+$ rails generate house_style:install
+```
+
+This will create `.rubocop.yml` files in your project root and `spec` folders.
 
 ## Development
 
