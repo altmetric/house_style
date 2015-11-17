@@ -1,0 +1,5 @@
+inherit_from: ../.rubocop.yml
+inherit_gem:
+  house_style: rspec/rubocop.yml
+
+require: rubocop-rspec
