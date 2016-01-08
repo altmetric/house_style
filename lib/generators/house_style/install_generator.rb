@@ -8,11 +8,11 @@ module HouseStyle
     end
 
     def create_root_rubocop_yml
-      copy_file '.rubocop.yml', '.rubocop.yml'
+      copy_file 'rubocop.yml', '.rubocop.yml'
     end
 
     def create_rspec_rubocop_yml
-      copy_file '.rspec-rubocop.yml', 'spec/.rubocop.yml'
+      copy_file 'rspec-rubocop.yml', 'spec/.rubocop.yml'
     end
 
     def create_db_migrate_rubocop_yml
