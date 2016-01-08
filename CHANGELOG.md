@@ -1,3 +1,7 @@
+# 0.2.1
+
+- [FIX] Rename generator template files so they are included in gem release.
+
 # 0.2.0
 
 - New defaults for `db/migrate` folders in Rails projects.
