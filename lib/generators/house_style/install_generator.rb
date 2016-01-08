@@ -14,5 +14,9 @@ module HouseStyle
     def create_rspec_rubocop_yml
       copy_file '.rspec-rubocop.yml', 'spec/.rubocop.yml'
     end
+
+    def create_db_migrate_rubocop_yml
+      copy_file 'db_migrate_rubocop.yml', 'db/migrate/.rubocop.yml'
+    end
   end
 end
