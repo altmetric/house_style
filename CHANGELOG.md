@@ -1,3 +1,7 @@
+# 0.2.2
+
+- [FIX] Revert gemspec file selection, as replacement was not correctly including the essential rubocop `.yml` files.
+
 # 0.2.1
 
 - [FIX] Rename generator template files so they are included in gem release.
