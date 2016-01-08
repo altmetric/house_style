@@ -1,3 +1,11 @@
+# 0.2.0
+
+- New defaults for `db/migrate` folders in Rails projects.
+- Rails projects using `house_style` can now use a Rails generator to install the relevant house style configurations:
+    - `{Rails.root}/.rubocop.yml` loads the default Rubocop config
+    - `{Rails.root}/spec/.rubocop.yml` loads tweaked config for RSpec folders, including use of the `rubocop-rspec` plugin
+    - `{Rails.root}/db/migrate/.rubocop.yml` ignores key rules for compatibility with Rails-generated migrations, etc.
+
 # 0.1.1
 
 - New `rspec/rubocop.yml` defaults.
