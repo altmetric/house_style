@@ -2,7 +2,6 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
-  RunRailsCops: false
   UseCache: true
 
   Include:

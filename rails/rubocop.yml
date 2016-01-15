@@ -1,4 +1,4 @@
 inherit_from: ../ruby/rubocop.yml
 
-AllCops:
-  RunRailsCops: true
+Rails:
+  Enabled: true
