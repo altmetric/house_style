@@ -8,7 +8,7 @@ module HouseStyle
     end
 
     def create_root_rubocop_yml
-      template 'rubocop.yml', '.rubocop.yml'
+      template 'rubocop.yml', '.rubocop.yml', assigns: { ruby_version: ruby_version }
     end
 
     def create_rspec_rubocop_yml
@@ -17,6 +17,13 @@ module HouseStyle
 
     def create_db_migrate_rubocop_yml
       template 'db_migrate_rubocop.yml', 'db/migrate/.rubocop.yml'
+    end
+
+    private
+
+    def ruby_version
+      major, minor, _ = RUBY_VERSION.split('.')
+      "#{major}.#{minor}"
     end
   end
 end
