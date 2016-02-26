@@ -1,2 +1,5 @@
+AllCops:
+  TargetRubyVersion: <%= ruby_version %>
+
 inherit_gem:
   house_style: rails/rubocop.yml
