@@ -36,6 +36,8 @@ Style/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
 Style/Encoding:
   EnforcedStyle: when_needed
+Style/FrozenStringLiteralComment:
+  Enabled: false
 Style/GuardClause:
   MinBodyLength: 3
 Style/HashSyntax:
@@ -52,6 +54,8 @@ Style/NonNilCheck:
   IncludeSemanticChanges: true
 Style/NumericLiterals:
   MinDigits: 6
+Style/SignalException:
+  EnforcedStyle: semantic
 Style/StringLiterals:
   Enabled: false
 Style/StringMethods:

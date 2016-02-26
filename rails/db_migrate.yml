@@ -1,24 +1,16 @@
 Metrics/ClassLength:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Metrics/LineLength:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Metrics/MethodLength:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Style/BlockDelimiters:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Style/Documentation:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Style/EmptyLineBetweenDefs:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Style/StringLiterals:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
 Metrics/AbcSize:
-  Exclude:
-    - db/migrate/*.rb
+  Enabled: false
