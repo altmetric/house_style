@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## master
+
+- The generator will no longer create `db/migrate/.rubocop.yml` if the Rails `db/` is not present.
+
 ## 1.0.0
 
 - Increases dependency to Rubocop 0.37.2, which changes how to specify Rails cops and introduces the requirement of a Ruby version in each project's `.rubocop.yml` file. A working value for this value will be inserted when `rails generate house_style:install` is run.

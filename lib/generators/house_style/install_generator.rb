@@ -16,14 +16,18 @@ module HouseStyle
     end
 
     def create_db_migrate_rubocop_yml
-      template 'db_migrate_rubocop.yml', 'db/migrate/.rubocop.yml'
+      template 'db_migrate_rubocop.yml', 'db/migrate/.rubocop.yml' if Dir.exist?(db_path)
     end
 
     private
 
     def ruby_version
-      major, minor, _ = RUBY_VERSION.split('.')
+      major, minor, _teeny = RUBY_VERSION.split('.')
       "#{major}.#{minor}"
+    end
+
+    def db_path
+      File.join(Rails.root, 'db')
     end
   end
 end
