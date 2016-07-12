@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## master
+## 1.1.0
 
 - Hound-CI uses the default rubocop configuration. It will now comment on pull requests only if code is committed that conflicts with the house style. [#11]
 - The generator will no longer create `db/migrate/.rubocop.yml` if the Rails `db/` is not present. [#10]
