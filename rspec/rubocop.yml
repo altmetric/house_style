@@ -6,8 +6,10 @@ Metrics/LineLength:
   Enabled: false
 Metrics/ModuleLength:
   Enabled: false
+RSpec/ExampleLength:
+  Enabled: false
 RSpec/NotToNot:
-  AcceptedMethod: to_not
+  EnforcedStyle: to_not
 Style/BlockDelimiters:
   Exclude:
     - spec/factories/**/*.rb

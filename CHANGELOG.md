@@ -4,6 +4,9 @@
 
 - Hound-CI uses the default rubocop configuration. It will now comment on pull requests only if code is committed that conflicts with the house style. [#11]
 - The generator will no longer create `db/migrate/.rubocop.yml` if the Rails `db/` is not present. [#10]
+- Updated rubocop to 0.41.2 and rubocop-rspec to 1.5. This has some consequences:
+    - a `TargetRubyVersion` is no longer needed, as rubocop defaults to using `.ruby-version` for identifying which version of ruby to parse against. When upgrading, it is safe to remove those lines from the host application's `.rubocop.yml` file.
+    - a new `RSpec/ExampleLength` cop is disabled for now. Nice idea, but if it's a choice between long examples and not being able to deploy because of a style issue, we should take the long examples.
 
 ## 1.0.0
 
