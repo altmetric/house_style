@@ -8,7 +8,7 @@ module HouseStyle
     end
 
     def create_root_rubocop_yml
-      template 'rubocop.yml', '.rubocop.yml', assigns: { ruby_version: ruby_version }
+      template 'rubocop.yml', '.rubocop.yml'
     end
 
     def create_rspec_rubocop_yml
@@ -20,11 +20,6 @@ module HouseStyle
     end
 
     private
-
-    def ruby_version
-      major, minor, _teeny = RUBY_VERSION.split('.')
-      "#{major}.#{minor}"
-    end
 
     def db_path
       File.join(Rails.root, 'db')
