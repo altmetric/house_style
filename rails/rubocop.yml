@@ -1,4 +1,7 @@
 inherit_from: ../ruby/rubocop.yml
-
+Exclude:
+  - bin/*
+  - vendor/**/*
+  - db/schema.rb
 Rails:
   Enabled: true
