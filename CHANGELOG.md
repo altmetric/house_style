@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## master
+
+- Exclude `/bin`, `/vendor` and `db/schema.rb` from ever being checked by rubocop in Rails projects
+
 ## 1.1.0
 
 - Hound-CI uses the default rubocop configuration. It will now comment on pull requests only if code is committed that conflicts with the house style. [#11]
