@@ -23,7 +23,7 @@ will be taken into account by rubocop also.
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.41.2'
+  spec.add_dependency 'rubocop', '~> 0.42.0'
   spec.add_dependency 'rubocop-rspec', '~> 1.5'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
