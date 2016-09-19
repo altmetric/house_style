@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## 1.1.1
+## 1.2.0
 
-- updated rubocop to 0.42.0 and rubocop-rspec to 1.6.
+- updated rubocop to 0.45.0 and rubocop-rspec to 1.8.
 - Exclude `/bin`, `/vendor` and `db/schema.rb` from ever being checked by rubocop in Rails projects
 
 ## 1.1.0
