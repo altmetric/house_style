@@ -1,4 +1,3 @@
-
 Style/BlockDelimiters:
   EnforcedStyle: semantic
   FunctionalMethods:

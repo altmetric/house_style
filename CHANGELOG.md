@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.3.0
+
+- updated rubocop to 0.46.0
+- Exclude `lib/tasks/cucumber.rake`, which is not intended to be edited.
+
 ## 1.2.0
 
 - updated rubocop to 0.45.0 and rubocop-rspec to 1.8.

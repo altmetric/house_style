@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'house_style'
-  spec.version       = '1.2.0'
+  spec.version       = '1.3.0'
   spec.authors       = ['Scott Matthewman']
   spec.email         = ['scott@altmetric.com']
 
@@ -23,7 +23,7 @@ will be taken into account by rubocop also.
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.45'
+  spec.add_dependency 'rubocop', '~> 0.46'
   spec.add_dependency 'rubocop-rspec', '~> 1.8'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
