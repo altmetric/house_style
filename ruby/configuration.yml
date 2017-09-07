@@ -16,7 +16,11 @@ AllCops:
     - '**/Berksfile'
     - '**/Cheffile'
     - '**/Vagabondfile'
+
   Exclude:
-    - 'vendor/**/*'
     - 'bin/**/*'
+    - 'client/node_modules/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
     - 'vagrant/plugins/**/*'

@@ -1,0 +1,4 @@
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+Layout/IndentHash:
+  EnforcedStyle: consistent

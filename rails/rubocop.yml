@@ -1,9 +1,14 @@
 inherit_from: ../ruby/rubocop.yml
 AllCops:
   Exclude:
-    - bin/**/*
-    - vendor/**/*
-    - db/schema.rb
-    - db/structure.sql
+    - 'bin/**/*'
+    - 'client/node_modules/**/*'
+    - 'config/**/*'
+    - 'db/schema.rb'
+    - 'db/structure.sql'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'vagrant/plugins/**/*'
 Rails:
   Enabled: true

@@ -9,7 +9,7 @@ This gem acts as a local repository for house style checkers for Ruby and Rails 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'house_style'
+gem 'house_style', git: 'git@github.com:BIAINC/house_style.git'
 ```
 
 And then execute:
@@ -30,6 +30,13 @@ If your project is a Rails project, you should use the instruction below, which 
 ```yaml
 inherit_gem:
   house_style: rails/rubocop.yml
+```
+
+If using RSpec, add a `spec/.rubocop.yml` file:
+
+```yaml
+inherit_gem:
+  house_style: rspec/rubocop.yml
 ```
 
 `house_style` comes with a Rails generator which can set up both your project root and your RSpec folder to start using the default house styles by default. With `house_style` declared in your Gemfile:
@@ -59,4 +66,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/altmet
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

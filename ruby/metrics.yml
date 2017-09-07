@@ -9,5 +9,3 @@ Metrics/LineLength:
     the flow can be hard because it becomes harder to scan back and
     locate the start of the next line. 80 characters is generally a bit
     too short; 120 characters is a good compromise.
-Metrics/MethodLength:
-  Max: 10
