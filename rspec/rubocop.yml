@@ -4,8 +4,6 @@ require: rubocop-rspec
 
 Metrics/BlockLength:
   Enabled: false
-Metrics/LineLength:
-  Enabled: false
 Metrics/ModuleLength:
   Enabled: false
 RSpec/ExampleLength:

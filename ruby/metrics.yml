@@ -1,3 +1,6 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'lib/tasks/**/*'
 Metrics/LineLength:
   Max: 120
   Details: >-
@@ -8,4 +11,3 @@ Metrics/LineLength:
     too short; 120 characters is a good compromise.
 Metrics/MethodLength:
   Max: 10
-

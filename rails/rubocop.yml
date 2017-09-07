@@ -4,6 +4,6 @@ AllCops:
     - bin/**/*
     - vendor/**/*
     - db/schema.rb
-    - lib/tasks/cucumber.rake
+    - db/structure.sql
 Rails:
   Enabled: true
