@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.0
+
+- Update and lock rubocop to 0.49. That way we prevent house_style to use newer version before it being updated and compatible before.
+
 ## 1.3.1
 
 - Lock rubocop to 0.48, the YAML files in house_style need tweaking before working with Rubocop 0.49.0.
