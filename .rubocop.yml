@@ -4,6 +4,6 @@
 # style settings from within your own projects
 inherit_from: ruby/rubocop.yml
 
-Style/IndentHeredoc:
+Layout/IndentHeredoc:
   Exclude:
     - house_style.gemspec
