@@ -1,13 +1,18 @@
 # CHANGELOG
 
+## 1.3.1
+
+- Lock rubocop to 0.48, the YAML files in house_style need tweaking before working with Rubocop 0.49.0.
+- Prevent long methods in tests from triggering a violation.
+
 ## 1.3.0
 
-- updated rubocop to 0.46.0
+- Updated rubocop to 0.46.0
 - Exclude `lib/tasks/cucumber.rake`, which is not intended to be edited.
 
 ## 1.2.0
 
-- updated rubocop to 0.45.0 and rubocop-rspec to 1.8.
+- Updated rubocop to 0.45.0 and rubocop-rspec to 1.8.
 - Exclude `/bin`, `/vendor` and `db/schema.rb` from ever being checked by rubocop in Rails projects
 
 ## 1.1.0
