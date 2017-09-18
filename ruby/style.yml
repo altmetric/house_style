@@ -25,16 +25,19 @@ Style/BracesAroundHashParameters:
     argument is also a Hash.
 Style/CollectionMethods:
   Enabled: true
+  PreferredMethods:
+    detect: find
+    inject: reduce
+    collect: map
+    find_all: select
 Style/CommandLiteral:
   EnforcedStyle: mixed
 Style/Copyright:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/EmptyLineBetweenDefs:
-  AllowAdjacentOneLineDefs: true
 Style/Encoding:
-  EnforcedStyle: when_needed
+  EnforcedStyle: never
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/GuardClause:
@@ -42,20 +45,16 @@ Style/GuardClause:
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
 Style/IfUnlessModifier:
-  MaxLineLength: 100
-Style/IndentHash:
-  EnforcedStyle: consistent
+  MaxLineLength: 120
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
-Style/MultilineOperationIndentation:
-  Enabled: false
 Style/NonNilCheck:
   IncludeSemanticChanges: true
-Style/NumericLiterals:
-  MinDigits: 6
 Style/SignalException:
   EnforcedStyle: semantic
 Style/StringLiterals:
-  Enabled: false
-Style/StringMethods:
-  Enabled: true
+  EnforcedStyle: single_quotes
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/WhileUntilModifier:
+  MaxLineLength: 120
