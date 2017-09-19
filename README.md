@@ -9,7 +9,9 @@ This gem acts as a local repository for house style checkers for Ruby and Rails 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'house_style', git: 'git@github.com:BIAINC/house_style.git'
+group :development, :test do
+  gem 'house_style', git: 'git@github.com:BIAINC/house_style.git'
+end
 ```
 
 And then execute:
@@ -25,7 +27,7 @@ inherit_gem:
   house_style: ruby/rubocop.yml
 ```
 
-If your project is a Rails project, you should use the instruction below, which includes all the standard Ruby house styles, with Rails-specific cops:
+For Rails projects, you should use the instruction below, which includes all the standard Ruby house styles, with Rails-specific cops:
 
 ```yaml
 inherit_gem:
@@ -46,6 +48,53 @@ $ rails generate house_style:install
 ```
 
 This will create `.rubocop.yml` files in your project root and `spec` folders.
+
+## Using this gem with Atom Editor
+
+- Install [Linter](https://atom.io/packages/linter)
+- Install [Linter Rubocop](https://atom.io/packages/linter-rubocop)
+- Inside the settings for the Linter Rubocop package, set the command to:
+
+```
+bundle exec rubocop
+```
+
+- Ensure the setting is checked that reads:
+
+>Disable when no .rubocop.yml config file is found
+
+## Using these files with CodeClimate
+
+Codeclimate can not download external gems, but it can download specific files. Add this to the top of your `.codeclimate.yml`:
+
+```
+prepare:
+  fetch:
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/rails/rubocop.yml
+      path: "codeclimate/rails/rubocop.yml"
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/ruby/rubocop.yml
+      path: "codeclimate/ruby/rubocop.yml"
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/ruby/configuration.yml
+      path: "codeclimate/ruby/configuration.yml"
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/ruby/layout.yml
+      path: "codeclimate/ruby/layout.yml"
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/ruby/metrics.yml
+      path: "codeclimate/ruby/metrics.yml"
+    - url: https://raw.githubusercontent.com/BIAINC/house_style/master/ruby/style.yml
+      path: "codeclimate/ruby/style.yml"
+```
+
+> Note that if you are using _only_ the ruby `rubocop` file, you will need to replace `master/rails/` with `master/ruby/` in the file paths.
+
+Inside the same file, where you set up `rubocop`, add the following to use the proper config:
+
+```
+rubocop:
+  enabled: true
+  config: 'codeclimate/rails/rubocop.yml'
+```
+
+Finally, add `/codeclimate` to your `.gitignore`.
 
 ## Development
 
