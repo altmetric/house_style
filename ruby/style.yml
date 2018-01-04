@@ -31,23 +31,19 @@ Style/Copyright:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/EmptyLineBetweenDefs:
+Layout/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
-Style/Encoding:
-  EnforcedStyle: when_needed
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/GuardClause:
   MinBodyLength: 3
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-Style/IfUnlessModifier:
-  MaxLineLength: 100
-Style/IndentHash:
+Layout/IndentHash:
   EnforcedStyle: consistent
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Enabled: false
 Style/NonNilCheck:
   IncludeSemanticChanges: true

@@ -8,7 +8,7 @@ Style/BlockDelimiters:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/EmptyLineBetweenDefs:
+Layout/EmptyLineBetweenDefs:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
