@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.4.0
+
+- updated rubocop to 0.52.0
+  - rename cops with changed names and remove deprecated definitions.
+
 ## 1.3.0
 
 - updated rubocop to 0.46.0
