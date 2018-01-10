@@ -6,8 +6,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.name          = 'house_style'
   spec.version       = '1.4.0'
-  spec.authors       = ['Scott Matthewman']
-  spec.email         = ['scott@altmetric.com']
+  spec.authors       = ['Altmetric', 'Scott Matthewman']
+  spec.email         = ['engineering@altmetric.com', 'scott.matthewman@gmail.com']
 
   spec.summary       = 'A centralised store of house style rules'
   spec.description   = 'Configuration files and other snippets to help you apply standards across multiple projects'
