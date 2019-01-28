@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.5.0
+- updated rubocop to 0.63.1
+
 ## 1.4.0
 
 - updated rubocop to 0.52.0
