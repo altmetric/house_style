@@ -8,4 +8,3 @@ Metrics/LineLength:
     too short; 120 characters is a good compromise.
 Metrics/MethodLength:
   Max: 10
-
