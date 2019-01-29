@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.5.1
+- [FIX] Remove `Include` values. Since 0.57 `Include` overwrites the hardcoded defaults. All values here are already included in the defaults, so no point in defining them here anymore.
+- [FIX] `SpaceInsideHashLiteralBraces` now belongs to `Layout` instead of `Style`
+- [FIX] Disabling new added cop `Style/AccessModifierDeclarations`. We use inline declarations (`private :foo :bar`) as default in our codebase.
+
 ## 1.5.0
 - updated rubocop to 0.63.1
 

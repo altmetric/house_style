@@ -17,7 +17,7 @@ Style/BlockDelimiters:
     - spec/factories/**/*.rb
 Style/Documentation:
   Enabled: false
-Style/SpaceInsideHashLiteralBraces:
+Layout/SpaceInsideHashLiteralBraces:
   Enabled: false
 Style/SymbolProc:
   Exclude:

@@ -55,3 +55,5 @@ Style/StringLiterals:
   Enabled: false
 Style/StringMethods:
   Enabled: true
+Style/AccessModifierDeclarations:
+  Enabled: false
