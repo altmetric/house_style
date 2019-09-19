@@ -39,12 +39,16 @@ Style/GuardClause:
   MinBodyLength: 3
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-Layout/IndentHash:
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
 Layout/MultilineOperationIndentation:
   Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 Style/NonNilCheck:
   IncludeSemanticChanges: true
 Style/NumericLiterals:
@@ -52,7 +56,8 @@ Style/NumericLiterals:
 Style/SignalException:
   EnforcedStyle: semantic
 Style/StringLiterals:
-  Enabled: false
+  EnforcedStyle: 'single_quotes'
+  Enabled: true
 Style/StringMethods:
   Enabled: true
 Style/AccessModifierDeclarations:

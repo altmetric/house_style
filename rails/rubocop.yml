@@ -7,3 +7,9 @@ AllCops:
     - lib/tasks/cucumber.rake
 Rails:
   Enabled: true
+Rails/InverseOf:
+  Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+require: rubocop-rails

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.6.0
+- [FIX] Require Rubocop higher than 0.49 to fix security issue: https://nvd.nist.gov/vuln/detail/CVE-2017-8418
+- [FIX] Rename `IndentHash` to `IndentFirstHashElement`, and require Rubocop 0.68 or higher because of this change.
+- Rails cops are now split into a different gem `rubocop-rails` that we include by default.
+- Disable new Rails cops InverseOf & HasManyOrHasOneDependent.
+- Exclude spec files for Lint/AmbiguousBlockAssociation as recommended in https://github.com/rubocop-hq/rubocop/issues/4222#issuecomment-290655562
+- Exclude specific rake configuration file for RSpec/ContextWording.
+- Specify `indented` as the default value for `IndentFirstArrayElement`.
+- Enforce `single_quotes` for `StringLiterals` by default.
+
+
 ## 1.5.1
 - [FIX] Remove `Include` values. Since 0.57 `Include` overwrites the hardcoded defaults. All values here are already included in the defaults, so no point in defining them here anymore.
 - [FIX] `SpaceInsideHashLiteralBraces` now belongs to `Layout` instead of `Style`

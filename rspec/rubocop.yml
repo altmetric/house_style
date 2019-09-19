@@ -24,3 +24,9 @@ Style/SymbolProc:
     - spec/factories/**/*.rb
 Style/WordArray:
   Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+RSpec/ContextWording:
+  Exclude:
+    - spec/support/shared_contexts/rake.rb
