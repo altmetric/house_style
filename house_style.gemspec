@@ -14,13 +14,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/altmetric/house_style'
   spec.license       = 'MIT'
 
-  spec.post_install_message = <<-ENDOFMESSAGE
-If you are updating house_style from version 1.0.0 or older, note that you can
-now remove any reference to TargetRubyVersion in your project's .rubocop.yml
-file. You should specify a .ruby-version file for your entire project, and that
-will be taken into account by rubocop also.
-  ENDOFMESSAGE
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ['lib']
 
