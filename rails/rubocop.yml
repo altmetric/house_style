@@ -14,5 +14,10 @@ Rails/InverseOf:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
   Enabled: false
+Rails/EnvironmentVariableAccess:
+  Enabled: true
+  AllowReads: true
+Rails/ShortI18n:
+  Enabled: false
 
 require: rubocop-rails

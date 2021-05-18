@@ -4,8 +4,6 @@ Rails/AfterCommitOverride:
   Enabled: true
 Rails/AttributeDefaultBlockValue:
   Enabled: true
-Rails/EnvironmentVariableAccess:
-  Enabled: true
 Rails/FindById:
   Enabled: true
 Rails/Inquiry:
@@ -23,8 +21,6 @@ Rails/PluckInWhere:
 Rails/RenderInline:
   Enabled: true
 Rails/RenderPlainText:
-  Enabled: true
-Rails/ShortI18n:
   Enabled: true
 Rails/SquishedSQLHeredocs:
   Enabled: true
