@@ -1,10 +1,2 @@
-Metrics/LineLength:
-  Max: 120
-  Details: >-
-    If lines are too short, methods become hard to read because you must
-    constantly jump from line to line. If lines are too long, following
-    the flow can be hard because it becomes harder to scan back and
-    locate the start of the next line. 80 characters is generally a bit
-    too short; 120 characters is a good compromise.
 Metrics/MethodLength:
   Max: 10
