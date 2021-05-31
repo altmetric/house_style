@@ -12,9 +12,10 @@
 
 ### Changes
 
-- Upgrade development dependencies: Bundler & Rake. 
+- Update Travis CI configuration and add a default Rake task (rubocop)
+- Upgrade development dependencies: Bundler & Rake.
 - Upgrade rubocop to 1.15.0, rubocop-rails to 2.10.1 and rubocop-rspec to 2.3.0.
-- Remove old pre-1.0 post-install message
+- Remove old pre-1.0 post-install message.
 
 ## 1.6.0
 - [FIX] Require Rubocop higher than 0.49 to fix security issue: https://nvd.nist.gov/vuln/detail/CVE-2017-8418
