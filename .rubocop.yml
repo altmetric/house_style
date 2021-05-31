@@ -3,7 +3,3 @@
 # See the [README](README.md) for instructions on using `house_style`
 # style settings from within your own projects
 inherit_from: ruby/rubocop.yml
-
-Style/IndentHeredoc:
-  Exclude:
-    - house_style.gemspec
