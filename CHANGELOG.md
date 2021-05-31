@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 2.0.0
+### New features
+
+- Add new rubocop extensions: rubocop-performance & rubocop-rake. Both enabled by default on Ruby configuration.
+
+### Bug fixes
+
+- Restrict extensions versions to avoid introducing new cops in the apps depending on house_style without previously configuing them here.
+- Exclude most Rails default configuration files for our cops to decrease the number of conflicts during Rails upgrades.
+
+### Changes
+
+- Upgrade development dependencies: Bundler & Rake. 
+- Upgrade rubocop to 1.15.0, rubocop-rails to 2.10.1 and rubocop-rspec to 2.3.0.
+- Remove old pre-1.0 post-install message
+
 ## 1.6.0
 - [FIX] Require Rubocop higher than 0.49 to fix security issue: https://nvd.nist.gov/vuln/detail/CVE-2017-8418
 - [FIX] Rename `IndentHash` to `IndentFirstHashElement`, and require Rubocop 0.68 or higher because of this change.
