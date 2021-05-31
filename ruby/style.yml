@@ -17,12 +17,6 @@ Style/BlockDelimiters:
     - let!
     - subject
     - watch
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
-  Details: >-
-    When the last (or only) argument to a method is a Hash,
-    omit the { } braces. The exception is if the preceding
-    argument is also a Hash.
 Style/CollectionMethods:
   Enabled: true
 Style/CommandLiteral:
@@ -39,9 +33,9 @@ Style/GuardClause:
   MinBodyLength: 3
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
@@ -49,6 +43,14 @@ Layout/MultilineOperationIndentation:
   Enabled: false
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
+Layout/LineLength:
+  Max: 120
+  Details: >-
+    If lines are too short, methods become hard to read because you must
+    constantly jump from line to line. If lines are too long, following
+    the flow can be hard because it becomes harder to scan back and
+    locate the start of the next line. 80 characters is generally a bit
+    too short; 120 characters is a good compromise.
 Style/NonNilCheck:
   IncludeSemanticChanges: true
 Style/NumericLiterals:

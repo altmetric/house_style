@@ -1,4 +1,7 @@
-inherit_from: ../ruby/rubocop.yml
+inherit_from:
+  - ../ruby/rubocop.yml
+  - ./default_rules.yml
+
 AllCops:
   Exclude:
     - bin/**/*
@@ -10,6 +13,11 @@ Rails:
 Rails/InverseOf:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/EnvironmentVariableAccess:
+  Enabled: true
+  AllowReads: true
+Rails/ShortI18n:
   Enabled: false
 
 require: rubocop-rails
