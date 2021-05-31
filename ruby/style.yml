@@ -1,3 +1,23 @@
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+Layout/MultilineOperationIndentation:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/LineLength:
+  Max: 120
+  Details: >-
+    If lines are too short, methods become hard to read because you must
+    constantly jump from line to line. If lines are too long, following
+    the flow can be hard because it becomes harder to scan back and
+    locate the start of the next line. 80 characters is generally a bit
+    too short; 120 characters is a good compromise.
+Style/AccessModifierDeclarations:
+  Enabled: false
 Style/BlockDelimiters:
   EnforcedStyle: semantic
   FunctionalMethods:
@@ -25,32 +45,14 @@ Style/Copyright:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Layout/EmptyLineBetweenDefs:
-  AllowAdjacentOneLineDefs: true
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/GuardClause:
   MinBodyLength: 3
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-Layout/FirstArrayElementIndentation:
-  EnforcedStyle: consistent
-Layout/FirstHashElementIndentation:
-  EnforcedStyle: consistent
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
-Layout/MultilineOperationIndentation:
-  Enabled: false
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-Layout/LineLength:
-  Max: 120
-  Details: >-
-    If lines are too short, methods become hard to read because you must
-    constantly jump from line to line. If lines are too long, following
-    the flow can be hard because it becomes harder to scan back and
-    locate the start of the next line. 80 characters is generally a bit
-    too short; 120 characters is a good compromise.
 Style/NonNilCheck:
   IncludeSemanticChanges: true
 Style/NumericLiterals:
@@ -62,5 +64,3 @@ Style/StringLiterals:
   Enabled: true
 Style/StringMethods:
   Enabled: true
-Style/AccessModifierDeclarations:
-  Enabled: false
