@@ -1,6 +1,7 @@
 inherit_from:
   - ../ruby/rubocop.yml
   - ./default_rules.yml
+  - ./style.yml
 
 AllCops:
   Exclude:
