@@ -1,6 +1,4 @@
-# coding: utf-8
-
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
@@ -18,7 +16,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '~> 1.15'
+  spec.add_dependency 'rubocop-performance', '~> 1.11'
   spec.add_dependency 'rubocop-rails', '~> 2.10'
+  spec.add_dependency 'rubocop-rake', '< 1.0'
   spec.add_dependency 'rubocop-rspec', '~> 2.3'
 
   spec.add_development_dependency 'bundler', '~> 2.0'

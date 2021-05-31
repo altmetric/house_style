@@ -1,0 +1,4 @@
+inherit_from:
+  - ./default_rules.yml
+
+require: rubocop-performance
