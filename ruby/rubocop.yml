@@ -3,3 +3,5 @@ inherit_from:
   - ./metrics.yml
   - ./style.yml
   - ./default_rules.yml
+  - ../rake/rubocop.yml
+  - ../performance/rubocop.yml

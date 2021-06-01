@@ -2,12 +2,20 @@ inherit_from: ../ruby/rubocop.yml
 
 require: rubocop-rspec
 
-Metrics/BlockLength:
-  Enabled: false
 Layout/LineLength:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+Metrics/BlockLength:
   Enabled: false
 Metrics/ModuleLength:
   Enabled: false
+RSpec/ContextWording:
+  Exclude:
+    - spec/support/shared_contexts/rake.rb
 RSpec/ExampleLength:
   Enabled: false
 RSpec/NotToNot:
@@ -17,16 +25,8 @@ Style/BlockDelimiters:
     - spec/factories/**/*.rb
 Style/Documentation:
   Enabled: false
-Layout/SpaceInsideHashLiteralBraces:
-  Enabled: false
 Style/SymbolProc:
   Exclude:
     - spec/factories/**/*.rb
 Style/WordArray:
   Enabled: false
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - spec/**/*
-RSpec/ContextWording:
-  Exclude:
-    - spec/support/shared_contexts/rake.rb
