@@ -18,6 +18,10 @@ RSpec/ContextWording:
     - spec/support/shared_contexts/rake.rb
 RSpec/ExampleLength:
   Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
 RSpec/NotToNot:
   EnforcedStyle: to_not
 Style/BlockDelimiters:
