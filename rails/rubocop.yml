@@ -7,7 +7,7 @@ AllCops:
   Exclude:
     - bin/**/*
     - vendor/**/*
-    - db/schema.rb
+    - db/*schema.rb
     - lib/tasks/cucumber.rake
 Rails:
   Enabled: true

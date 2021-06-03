@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.1
+### Bug fixes
+- Ignore other database schemas in /db for Rails apps
+- Disable `RSpec/MultipleExpectations` cop.
+- Tweak `RSpec/MultipleMemoizedHelpers` to 10.
+
 ## 2.0.0
 ### New features
 
