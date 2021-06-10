@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.2
+### Bug fixes
+- Exclude Guardfile from Ruby & Rails configurations
+
 ## 2.0.1
 ### Bug fixes
 - Ignore other database schemas in /db for Rails apps

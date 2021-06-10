@@ -9,6 +9,7 @@ AllCops:
     - vendor/**/*
     - db/*schema.rb
     - lib/tasks/cucumber.rake
+    - Guardfile
 Rails:
   Enabled: true
 Rails/InverseOf:
