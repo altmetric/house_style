@@ -5,8 +5,9 @@ AllCops:
   UseCache: true
 
   Exclude:
-    - 'vendor/**/*'
     - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'Guardfile'
 
 Gemspec/RequiredRubyVersion:
   Enabled: false
