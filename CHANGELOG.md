@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.0
+- Enable NewCops by default
+- Support Rubocop up to 1.22.x and latest extensions
+
 ## 2.0.2
 ### Bug fixes
 - Exclude Guardfile from Ruby & Rails configurations
