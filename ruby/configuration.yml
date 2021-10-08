@@ -3,6 +3,7 @@ AllCops:
   DisplayStyleGuide: true
   ExtraDetails: true
   UseCache: true
+  NewCops: enable
 
   Exclude:
     - 'bin/**/*'
