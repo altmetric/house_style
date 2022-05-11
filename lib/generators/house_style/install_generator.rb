@@ -19,10 +19,17 @@ module HouseStyle
       template 'db_migrate_rubocop.yml', 'db/migrate/.rubocop.yml' if Dir.exist?(db_path)
     end
 
+    def create_features_rubocop_yml
+      template 'features_rubocop.yml', 'features/.rubocop.yml' if Dir.exist?(features_path)
+    end
+
     private
 
     def db_path
       File.join(Rails.root, 'db')
+
+    def features_path
+      File.join(Rails.root, 'features')
     end
   end
 end
