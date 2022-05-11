@@ -22,10 +22,8 @@ Style/StringLiterals:
     - config/environments/test.rb
     - config/initializers/**
     - config/puma.rb
-    - config.ru
     - Rakefile
 
 Style/SymbolArray:
   Exclude:
     - config/initializers/filter_parameter_logging.rb
-

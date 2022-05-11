@@ -3,6 +3,9 @@
 ## CURRENT
 ### Bug fixes
 - Install db_migrate.yml only if `db/migrate/` folder exists rather than just `db/` folder.
+### Changes
+- Rails: Move the AllCops to the Ruby one instead of repeating the same block. Disable Rails/SquishedSQLHeredocs and Rails/SkipsModelValidations.
+- RSpec: Disable Spec/ContextWording, RSpec/NestedGroups, RSpec/DescribeClass and Style/BlockDelimiters.
 ### New features
 - Add new configuration for feature tests inside `features/` folder.
 

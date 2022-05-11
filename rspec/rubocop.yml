@@ -14,8 +14,7 @@ Metrics/BlockLength:
 Metrics/ModuleLength:
   Enabled: false
 RSpec/ContextWording:
-  Exclude:
-    - spec/support/shared_contexts/rake.rb
+  Enabled: false
 RSpec/ExampleLength:
   Enabled: false
 RSpec/MultipleExpectations:
@@ -24,9 +23,12 @@ RSpec/MultipleMemoizedHelpers:
   Max: 10
 RSpec/NotToNot:
   EnforcedStyle: to_not
+RSpec/NestedGroups:
+  Enabled: false
+RSpec/DescribeClass:
+  Enabled: false
 Style/BlockDelimiters:
-  Exclude:
-    - spec/factories/**/*.rb
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/SymbolProc:
