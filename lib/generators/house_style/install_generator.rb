@@ -12,7 +12,7 @@ module HouseStyle
     end
 
     def create_rspec_rubocop_yml
-      template 'rspec-rubocop.yml', 'spec/.rubocop.yml'
+      template 'rspec_rubocop.yml', 'spec/.rubocop.yml'
     end
 
     def create_db_migrate_rubocop_yml
@@ -26,7 +26,8 @@ module HouseStyle
     private
 
     def db_path
-      File.join(Rails.root, 'db')
+      File.join(Rails.root, 'db', 'migrate')
+    end
 
     def features_path
       File.join(Rails.root, 'features')

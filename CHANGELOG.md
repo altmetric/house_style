@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## CURRENT
+### Bug fixes
+- Install db_migrate.yml only if `db/migrate/` folder exists rather than just `db/` folder.
+### New features
 - Add new configuration for feature tests inside `features/` folder.
 
 ## 2.1.0
