@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'house_style'
-  spec.version       = '2.2.0'
+  spec.version       = '2.2.1'
   spec.authors       = ['Altmetric', 'Scott Matthewman']
   spec.email         = ['engineering@altmetric.com', 'scott.matthewman@gmail.com']
 
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/altmetric/house_style'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(bin|.gitignore|)/}) }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '>= 1.0', '< 1.23'
