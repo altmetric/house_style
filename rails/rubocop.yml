@@ -3,13 +3,6 @@ inherit_from:
   - ./default_rules.yml
   - ./style.yml
 
-AllCops:
-  Exclude:
-    - bin/**/*
-    - vendor/**/*
-    - db/*schema.rb
-    - lib/tasks/cucumber.rake
-    - Guardfile
 Rails:
   Enabled: true
 Rails/InverseOf:
@@ -20,6 +13,10 @@ Rails/EnvironmentVariableAccess:
   Enabled: true
   AllowReads: true
 Rails/ShortI18n:
+  Enabled: false
+Rails/SquishedSQLHeredocs:
+  Enabled: false
+Rails/SkipsModelValidations:
   Enabled: false
 
 require: rubocop-rails

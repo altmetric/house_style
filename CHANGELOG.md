@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## CURRENT
+
+## 2.2.0
+### Bug fixes
+- Install db_migrate.yml only if `db/migrate/` folder exists rather than just `db/` folder.
+### Changes
+- Rails: Move the AllCops to the Ruby one instead of repeating the same block. Disable Rails/SquishedSQLHeredocs and Rails/SkipsModelValidations.
+- RSpec: Disable Spec/ContextWording, RSpec/NestedGroups, RSpec/DescribeClass and Style/BlockDelimiters.
+### New features
+- Add new configuration for feature tests inside `features/` folder.
+
 ## 2.1.0
 - Enable NewCops by default
 - Support Rubocop up to 1.22.x and latest extensions
