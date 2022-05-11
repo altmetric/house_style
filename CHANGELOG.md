@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## CURRENT
+
+## 2.2.0
 ### Bug fixes
 - Install db_migrate.yml only if `db/migrate/` folder exists rather than just `db/` folder.
 ### Changes
