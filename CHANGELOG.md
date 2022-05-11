@@ -2,6 +2,10 @@
 
 ## CURRENT
 
+## 2.2.1
+### Bug fixes
+- Do not skip features/ directory in the gem when packaging.
+
 ## 2.2.0
 ### Bug fixes
 - Install db_migrate.yml only if `db/migrate/` folder exists rather than just `db/` folder.

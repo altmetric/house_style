@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/altmetric/house_style'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(bin|.gitignore|)/}) }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '>= 1.0', '< 1.23'
