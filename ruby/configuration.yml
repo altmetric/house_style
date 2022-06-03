@@ -14,6 +14,9 @@ AllCops:
     - tmp/**/*
     - db/*schema.rb
     - config.ru
+    - config/environments/**/*
+    - config/puma.rb
+    - config/spring.rb
 
 Gemspec/RequiredRubyVersion:
   Enabled: false

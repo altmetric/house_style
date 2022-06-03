@@ -2,6 +2,10 @@
 
 ## CURRENT
 
+## 2.3.0
+### Changes
+- Exclude more Rails configuration files affected by rails app:update.
+
 ## 2.2.1
 ### Bug fixes
 - Do not skip features/ directory in the gem when packaging.
