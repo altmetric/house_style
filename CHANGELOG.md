@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## CURRENT
+### Bug fixes
+- Change the Rails template so the require for the rspec plugin is done in the main .rubocop.yml file. Otherwise generating the TODO doesn't work properly.
 
 ## 2.3.0
 ### Changes
