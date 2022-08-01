@@ -5,6 +5,8 @@
 - Change the Rails template so the require for the rspec plugin is done in the main .rubocop.yml file. Otherwise generating the TODO doesn't work properly.
 ### Changes
 - Relax plugin versions
+- Autocorrect disabled for Rspec/Focus
+- Allow numbers at the end of block parameter names
 
 ## 2.3.0
 ### Changes

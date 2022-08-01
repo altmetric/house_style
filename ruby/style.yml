@@ -16,6 +16,8 @@ Layout/LineLength:
     the flow can be hard because it becomes harder to scan back and
     locate the start of the next line. 80 characters is generally a bit
     too short; 120 characters is a good compromise.
+Naming/BlockParameterName:
+  AllowNamesEndingInNumbers: true
 Style/AccessModifierDeclarations:
   Enabled: false
 Style/BlockDelimiters:
