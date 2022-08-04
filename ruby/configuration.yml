@@ -3,20 +3,19 @@ AllCops:
   DisplayStyleGuide: true
   ExtraDetails: true
   UseCache: true
-  NewCops: enable
+  NewCops: disable
+  # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
+  # to ignore them, so only the ones explicitly set in this file are enabled.
+  DisabledByDefault: true
 
   Exclude:
     - bin/**/*
-    - vendor/**/*
+    - config/**/*
+    - config.ru
+    - db/*schema.rb
     - Guardfile
     - lib/tasks/cucumber.rake
     - node_modules/**/*
+    - Rakefile
     - tmp/**/*
-    - db/*schema.rb
-    - config.ru
-    - config/environments/**/*
-    - config/puma.rb
-    - config/spring.rb
-
-Gemspec/RequiredRubyVersion:
-  Enabled: false
+    - vendor/**/*

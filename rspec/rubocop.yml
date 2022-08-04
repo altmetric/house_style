@@ -9,30 +9,103 @@ Layout/SpaceInsideHashLiteralBraces:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
-Metrics/BlockLength:
-  Enabled: false
-Metrics/ModuleLength:
-  Enabled: false
-RSpec/ContextWording:
-  Enabled: false
-RSpec/ExampleLength:
-  Enabled: false
-RSpec/MultipleExpectations:
-  Enabled: false
-RSpec/MultipleMemoizedHelpers:
-  Max: 10
+
+RSpec/Capybara/CurrentPathExpectation:
+  Enabled: true
+
+RSpec/FactoryBot/AttributeDefinedStatically:
+  Enabled: true
+RSpec/FactoryBot/CreateList:
+  Enabled: true
+RSpec/FactoryBot/FactoryClassName:
+  Enabled: true
+
+RSpec/BeEql:
+  Enabled: true
+RSpec/ContextMethod:
+  Enabled: true
+RSpec/EmptyHook:
+  Enabled: true
+RSpec/EmptyLineAfterExample:
+  Enabled: true
+RSpec/EmptyLineAfterExampleGroup:
+  Enabled: true
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: true
+RSpec/EmptyLineAfterHook:
+  Enabled: true
+RSpec/EmptyLineAfterSubject:
+  Enabled: true
+RSpec/ExpectActual:
+  Enabled: true
+RSpec/ExpectInHook:
+  Enabled: true
+RSpec/ExpectOutput:
+  Enabled: true
+RSpec/FilePath:
+  Enabled: true
+RSpec/Focus:
+  Enabled: true
+  AutoCorrect: false
+RSpec/HookArgument:
+  Enabled: true
+RSpec/HooksBeforeExamples:
+  Enabled: true
+RSpec/IdenticalEqualityAssertion:
+  Enabled: true
+RSpec/ImplicitExpect:
+  Enabled: true
+RSpec/ImplicitSubject:
+  Enabled: true
+RSpec/InstanceSpy:
+  Enabled: true
+RSpec/InstanceVariable:
+  Enabled: true
+RSpec/ItBehavesLike:
+  Enabled: true
+RSpec/LeadingSubject:
+  Enabled: true
+RSpec/MultipleSubjects:
+  Enabled: true
 RSpec/NotToNot:
+  Enabled: true
   EnforcedStyle: to_not
-RSpec/NestedGroups:
-  Enabled: false
-RSpec/DescribeClass:
-  Enabled: false
+RSpec/OverwritingSetup:
+  Enabled: true
+RSpec/ReceiveCounts:
+  Enabled: true
+RSpec/ReceiveNever:
+  Enabled: true
+RSpec/RepeatedDescription:
+  Enabled: true
+RSpec/RepeatedExample:
+  Enabled: true
+RSpec/RepeatedExampleGroupBody:
+  Enabled: true
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: true
+RSpec/RepeatedIncludeExample:
+  Enabled: true
+RSpec/ReturnFromStub:
+  Enabled: true
+RSpec/ScatteredLet:
+  Enabled: true
+RSpec/SharedContext:
+  Enabled: true
+RSpec/SharedExamples:
+  Enabled: true
+RSpec/SingleArgumentMessageChain:
+  Enabled: true
+RSpec/UnspecifiedException:
+  Enabled: true
+RSpec/VariableDefinition:
+  Enabled: true
+RSpec/VariableName:
+  Enabled: true
+RSpec/VoidExpect:
+  Enabled: true
+RSpec/Yield:
+  Enabled: true
+
 Style/BlockDelimiters:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/SymbolProc:
-  Exclude:
-    - spec/factories/**/*.rb
-Style/WordArray:
   Enabled: false
