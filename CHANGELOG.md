@@ -1,11 +1,11 @@
 # CHANGELOG
 
-## CURRENT
+## 3.0.0
 ### Bug fixes
 - Change the Rails template so the require for the rspec plugin is done in the main .rubocop.yml file. Otherwise generating the TODO doesn't work properly.
 ### Changes
-- Remove rubocop-rake plugin.
 - Disable all cops by default (including the new ones), and specifically set the enabled ones.
+- Remove rubocop-rake plugin.
 - Reduce the number of configuration files, `rubocop.yml` will include the cops configuration for each environment/plugin
 - Set mininum Rubocop version to 1.31 (which includes rubocop server). Relax rubocop version restriction, as it should remain compatible on 1.x branch now that we allow specific cops only.
 - Relax plugin versions
