@@ -1,4 +1,59 @@
-inherit_from:
-  - ./default_rules.yml
-
 require: rubocop-performance
+
+Performance:
+  Exclude:
+    - 'spec/**/*'
+    - 'features/**/*'
+
+Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+Performance/BindCall:
+  Enabled: true
+Performance/BlockGivenWithExplicitBlock:
+  Enabled: true
+Performance/Caller:
+  Enabled: true
+Performance/CompareWithBlock:
+  Enabled: true
+Performance/ConcurrentMonotonicTime:
+  Enabled: true
+Performance/ConstantRegexp:
+  Enabled: true
+Performance/DoubleStartEndWith:
+  Enabled: true
+Performance/FlatMap:
+  Enabled: true
+Performance/IoReadlines:
+  Enabled: true
+Performance/MapCompact:
+  Enabled: true
+Performance/RedundantBlockCall:
+  Enabled: true
+Performance/RedundantMatch:
+  Enabled: true
+Performance/RedundantSortBlock:
+  Enabled: true
+Performance/RedundantSplitRegexpArgument:
+  Enabled: true
+Performance/RedundantStringChars:
+  Enabled: true
+Performance/RegexpMatch:
+  Enabled: true
+Performance/ReverseEach:
+  Enabled: true
+Performance/ReverseFirst:
+  Enabled: true
+Performance/SelectMap:
+  Enabled: true
+Performance/Size:
+  Enabled: true
+Performance/SortReverse:
+  Enabled: true
+Performance/Squeeze:
+  Enabled: true
+Performance/StringIdentifierArgument:
+  Enabled: true
+Performance/StringReplacement:
+  Enabled: true
+Performance/UriDefaultParser:
+  Enabled: true

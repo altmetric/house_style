@@ -2,15 +2,7 @@ Layout/EmptyLineBetweenDefs:
   Enabled: false
 Layout/LineLength:
   Enabled: false
-Metrics/AbcSize:
-  Enabled: false
-Metrics/ClassLength:
-  Enabled: false
-Metrics/MethodLength:
-  Enabled: false
 Style/BlockDelimiters:
-  Enabled: false
-Style/Documentation:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
