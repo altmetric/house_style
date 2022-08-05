@@ -45,8 +45,6 @@ Rails/ExpandedDateRange:
   Enabled: true
 Rails/FindBy:
   Enabled: true
-Rails/FindById:
-  Enabled: true
 Rails/FindEach:
   Enabled: true
 Rails/HttpPositionalArguments:

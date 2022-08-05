@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## CURRENT
+### Changes
+- Do not suggest extensions
+- Remove Rails/FindById (it isn't safe if you're using MongoId in a project depending on your configuration)
+- In RSpec template, do not inherit the root configuration, as the rspec .rubocop.yml file already inherits the ruby configuration itself.
+
 ## 3.0.0
 ### Bug fixes
 - Change the Rails template so the require for the rspec plugin is done in the main .rubocop.yml file. Otherwise generating the TODO doesn't work properly.
