@@ -457,22 +457,8 @@ Style/BisectedAttrAccessor:
 Style/BlockComments:
   Enabled: true
 Style/BlockDelimiters:
-  EnforcedStyle: semantic
-  FunctionalMethods:
-    - before
-    - given
-    - given!
-    - watch
-    - times
-    - try
-    - debug
-    - error
-    - info
-    - warning
-    - let
-    - let!
-    - subject
-    - watch
+  Enabled: true
+  EnforcedStyle: braces_for_chaining
 Style/CharacterLiteral:
   Enabled: true
 Style/ClassMethods:

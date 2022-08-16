@@ -4,6 +4,8 @@
 ### Changes
 - Do not suggest extensions
 - Remove Rails/FindById (it isn't safe if you're using MongoId in a project depending on your configuration)
+- Use `braces_for_chaining` for `Style/BlockDelimiters`. As a team, we've agreed to use this more general extended approach among the community. It also simplifies configuration for specs, fixtures, migrations... etc.
+## Bug fixes
 - In RSpec template, do not inherit the root configuration, as the rspec .rubocop.yml file already inherits the ruby configuration itself.
 
 ## 3.0.0

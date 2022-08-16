@@ -2,6 +2,3 @@ inherit_from: ../ruby/rubocop.yml
 
 Layout/LineLength:
   Enabled: false
-Style/BlockDelimiters:
-  Exclude:
-    - factories/**/*

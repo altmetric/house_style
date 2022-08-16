@@ -106,6 +106,3 @@ RSpec/VoidExpect:
   Enabled: true
 RSpec/Yield:
   Enabled: true
-
-Style/BlockDelimiters:
-  Enabled: false
