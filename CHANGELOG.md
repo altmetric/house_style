@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## CURRENT
+## 3.1.0
 ### Changes
 - Do not suggest extensions
 - Remove Rails/FindById (it isn't safe if you're using MongoId in a project depending on your configuration)
