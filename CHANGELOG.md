@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## CURRENT
+## 3.2.0
 ### Changes
 - Remove RSpec/ExpectActual: Whenever we do routing, there's always false positives, e.g. `expect(post: '/email_updates/123').to route_to('email_updates#create', id: '123')`.
 
