@@ -36,8 +36,6 @@ RSpec/EmptyLineAfterHook:
   Enabled: true
 RSpec/EmptyLineAfterSubject:
   Enabled: true
-RSpec/ExpectActual:
-  Enabled: true
 RSpec/ExpectInHook:
   Enabled: true
 RSpec/ExpectOutput:
