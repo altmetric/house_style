@@ -10,7 +10,7 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
 
-RSpec/Capybara/CurrentPathExpectation:
+Capybara/CurrentPathExpectation:
   Enabled: true
 
 RSpec/FactoryBot/AttributeDefinedStatically:
