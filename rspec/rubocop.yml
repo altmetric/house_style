@@ -13,11 +13,11 @@ Lint/AmbiguousBlockAssociation:
 Capybara/CurrentPathExpectation:
   Enabled: true
 
-RSpec/FactoryBot/AttributeDefinedStatically:
+FactoryBot/AttributeDefinedStatically:
   Enabled: true
-RSpec/FactoryBot/CreateList:
+FactoryBot/CreateList:
   Enabled: true
-RSpec/FactoryBot/FactoryClassName:
+FactoryBot/FactoryClassName:
   Enabled: true
 
 RSpec/BeEql:
