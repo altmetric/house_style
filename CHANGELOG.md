@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.2.1
+### Changes
+- Remove the `RSpec/` prefix from the Capybara and FactoryBot configurations.  These namespaces changes should be hidden until `rubocop-rspec` v3.0 according to https://github.com/rubocop/rubocop-rspec/blob/master/CHANGELOG.md but we are seeing warnings now so we are moving the new namespaces immediately.
+
 ## 3.2.0
 ### Changes
 - Remove RSpec/ExpectActual: Whenever we do routing, there's always false positives, e.g. `expect(post: '/email_updates/123').to route_to('email_updates#create', id: '123')`.
