@@ -529,6 +529,7 @@ Style/HashExcept:
   Enabled: true
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
+  EnforcedShorthandSyntax: consistent
 Style/HashTransformKeys:
   Enabled: true
 Style/HashTransformValues:
