@@ -1,6 +1,13 @@
 # CHANGELOG
 
+## 3.2.2
+
+### Changes
+
+- Split RSpec/FilePath into RSpec/SpecFilePathSuffix and RSpec/SpecFilePathFormat.
+
 ## 3.2.1
+
 ### Changes
 - Remove the `RSpec/` prefix from the Capybara and FactoryBot configurations.  These namespaces changes should be hidden until `rubocop-rspec` v3.0 according to https://github.com/rubocop/rubocop-rspec/blob/master/CHANGELOG.md but we are seeing warnings now so we are moving the new namespaces immediately.
 

@@ -40,7 +40,9 @@ RSpec/ExpectInHook:
   Enabled: true
 RSpec/ExpectOutput:
   Enabled: true
-RSpec/FilePath:
+RSpec/SpecFilePathSuffix:
+  Enabled: true
+RSpec/SpecFilePathFormat:
   Enabled: true
 RSpec/Focus:
   Enabled: true

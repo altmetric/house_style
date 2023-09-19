@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'house_style'
-  spec.version       = '3.2.1'
+  spec.version       = '3.2.2'
   spec.authors       = ['Altmetric', 'Scott Matthewman']
   spec.email         = ['engineering@altmetric.com', 'scott.matthewman@gmail.com']
 
