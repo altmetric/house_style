@@ -1,4 +1,5 @@
-require: rubocop-rails
+plugins:
+  - rubocop-rails
 
 inherit_from:
   - ../ruby/rubocop.yml
