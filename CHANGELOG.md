@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## CURRENT
+
+## 4.0.0
+
+### Changes
+
+- Rename deprecated `Naming/PredicateName` cop to `Naming/PredicatePrefix`
+- Upgrade to rubocop-rspec 3.x which extracts FactoryBot and Capybara cops to separate gems
+- Update minimum dependency versions to latest stable releases:
+  - rubocop >= 1.81 (was >= 1.31)
+  - rubocop-performance ~> 1.26 (was ~> 1.11)
+  - rubocop-rails ~> 2.33 (was ~> 2.12)
+  - rubocop-rspec ~> 3.7 (was ~> 2.5)
+  - rubocop-capybara ~> 2.22 (new explicit dependency for rubocop-rspec v3)
+  - rubocop-factory_bot ~> 2.27 (new explicit dependency for rubocop-rspec v3)
+- Update to use new `plugins:` syntax for all RuboCop extensions.
+
 ## 3.2.2
 
 ### Changes
@@ -9,7 +26,7 @@
 ## 3.2.1
 
 ### Changes
-- Remove the `RSpec/` prefix from the Capybara and FactoryBot configurations.  These namespaces changes should be hidden until `rubocop-rspec` v3.0 according to https://github.com/rubocop/rubocop-rspec/blob/master/CHANGELOG.md but we are seeing warnings now so we are moving the new namespaces immediately.
+- Remove the `RSpec/` prefix from the Capybara and FactoryBot configurations. These namespaces changes should be hidden until `rubocop-rspec` v3.0 according to https://github.com/rubocop/rubocop-rspec/blob/master/CHANGELOG.md but we are seeing warnings now so we are moving the new namespaces immediately.
 
 ## 3.2.0
 ### Changes

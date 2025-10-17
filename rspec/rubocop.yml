@@ -1,6 +1,9 @@
 inherit_from: ../ruby/rubocop.yml
 
-require: rubocop-rspec
+plugins:
+  - rubocop-rspec
+  - rubocop-capybara
+  - rubocop-factory_bot
 
 Layout/LineLength:
   Enabled: false
