@@ -2,6 +2,11 @@
 
 ## CURRENT
 
+## 4.0.1
+
+### Changes
+- Disable Rails/Pluck cop: it produces false positives with Nokogiri XML nodes that use similar bracket syntax to ActiveRecord attributes.
+
 ## 4.0.0
 
 ### Changes

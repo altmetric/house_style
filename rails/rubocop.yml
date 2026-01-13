@@ -68,8 +68,6 @@ Rails/MigrationClassName:
   Enabled: true
 Rails/Pick:
   Enabled: true
-Rails/Pluck:
-  Enabled: true
 Rails/PluralizationGrammar:
   Enabled: true
 Rails/Presence:
