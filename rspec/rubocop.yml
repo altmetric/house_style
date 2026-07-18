@@ -20,6 +20,12 @@ FactoryBot/AttributeDefinedStatically:
   Enabled: true
 FactoryBot/CreateList:
   Enabled: true
+  # Pin EnforcedStyle explicitly rather than relying on rubocop-factory_bot's
+  # injected default. In setups where the plugin's default config is not merged,
+  # EnforcedStyle resolves to nil and the cop raises "undefined method 'to_sym'
+  # for nil". An explicit value survives config inheritance and keeps the cop
+  # working. See https://github.com/rubocop/rubocop-factory_bot.
+  EnforcedStyle: create_list
 FactoryBot/FactoryClassName:
   Enabled: true
 

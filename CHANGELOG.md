@@ -2,6 +2,11 @@
 
 ## CURRENT
 
+## 4.0.2
+
+### Changes
+- Pin `FactoryBot/CreateList` `EnforcedStyle` explicitly to `create_list`. In setups where rubocop-factory_bot's default config is not merged, `EnforcedStyle` resolved to `nil` and the cop raised `undefined method 'to_sym' for nil`, failing `rubocop` repo-wide. An explicit value survives config inheritance and keeps the cop enabled.
+
 ## 4.0.1
 
 ### Changes
