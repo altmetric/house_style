@@ -2,6 +2,11 @@
 
 ## CURRENT
 
+## 4.0.3
+
+### Changes
+- Rename `Capybara/CurrentPathExpectation` to `Capybara/RSpec/CurrentPathExpectation`. rubocop-capybara 2.23.0 moved the cop under the `Capybara/RSpec` namespace and flags the old name as obsolete config, which fails `rubocop` in consuming repos. Bump the `rubocop-capybara` floor to `~> 2.23` so the new cop name is always recognised.
+
 ## 4.0.2
 
 ### Changes
