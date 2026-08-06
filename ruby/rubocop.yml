@@ -538,7 +538,13 @@ Style/IdenticalConditionalBranches:
 Style/IfInsideElse:
   Enabled: true
 Style/IfUnlessModifier:
-  Enabled: true
+  # Off since rubocop 1.89, which made modifier cops defer to
+  # Layout/LineLength's exemption ladder (rubocop/rubocop#15493). Our
+  # AllowedPatterns exempt any line holding a quoted string, so the cop treats
+  # almost every line as unbounded and demands modifier form for conditionals
+  # that collapse to between 121 and 247 characters. Re-enable once
+  # AllowedPatterns matches genuinely long strings, not any line containing one.
+  Enabled: false
 Style/IfUnlessModifierOfIfUnless:
   Enabled: true
 Style/IfWithBooleanLiteralBranches:

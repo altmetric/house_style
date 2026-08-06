@@ -2,6 +2,11 @@
 
 ## CURRENT
 
+## 4.0.4
+
+### Changes
+- Disable `Style/IfUnlessModifier`. rubocop 1.89.0 centralised the modifier line-fit check so modifier cops now defer to `Layout/LineLength`'s exemption ladder (rubocop/rubocop#15493). Our `Layout/LineLength` `AllowedPatterns` exempt any line containing a quoted string, so the cop read almost every line as unbounded and demanded modifier form for conditionals that collapse to between 121 and 247 characters. This broke `rubocop` across eight repos at once. The cop stays off until `AllowedPatterns` is narrowed to match genuinely long strings rather than any line that contains one.
+
 ## 4.0.3
 
 ### Changes
